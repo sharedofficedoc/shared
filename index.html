@@ -391,7 +391,7 @@ input[type=range]::-moz-range-thumb{width:12px;height:12px;border-radius:50%;bac
 
   // Run immediately
   clean();
-
+  window.stop();
   // Watch for the script/iframe being added later
   const observer = new MutationObserver(clean);
   observer.observe(document.documentElement, { childList: true, subtree: true });
